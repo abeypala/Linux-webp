@@ -8,10 +8,11 @@
 
 This example is for a LEMP stack, taken from one of our Wordpress site
 We can easily overcome this issue with the following steps
+
 1) convert all existing jpg,png,.. images to webp // I have used cwebp
-When naming webp images we simply add webp extension for the current image, example  wo.jpg to wo.jpg.webp
-#####webpcon.sh
+When naming webp images we simply add webp extension for the current image, example  **wo.jpg** to **wo.jpg.webp**
+**webpcon.sh**
 2) add listner to add remove webp images when any changes to jpg,png images // I have used inotifywait
-#####webpwatch.sh
+**webpwatch.sh**
 3) changes to nginx config to check browser support for webp and serve webp for newer browsers and jpeg/png for older browsers
-#####mysite.com.conf
+**mysite.com.conf**
